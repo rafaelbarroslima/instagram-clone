@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(243, 243, 243);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100vh;
+}
+
+.box-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    margin-bottom: 1.2rem;
+}
+
+.box:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 1rem;
+
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+}
+
+.button-login {
+    background-color: #0095f6;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.button-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+
+.link-blue {
+    color: #0095f6;
+    cursor: pointer;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('/images/gplay.png');
+
+}
+
+.app-download:nth-child(2) {
+    background-image: url('/images/appstore.png');
+    
+}
+
+/* Media queries */
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .container {
+        justify-content: center;
+    }
+    .phone {
+        max-width: 70%;
+        max-width: 70%;
+    }
+    .box-login {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        background: #fff;
+    }
+    .container {
+        justify-content: center;
+    }
+    .phone {
+        display: none;
+    }
+
+    .box {
+        border: 1px solid transparent;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .box-login {
+        width: 100%;
+    }
+}
